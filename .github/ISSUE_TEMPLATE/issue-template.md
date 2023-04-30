@@ -1,3 +1,12 @@
+---
+name: Issue Template
+about: Describe this issue template's purpose here.
+title: ''
+labels: ''
+assignees: ''
+
+---
+
 [제목]  // 삭제하고 작성
 
 제목 입니다. // 삭제하고 작성

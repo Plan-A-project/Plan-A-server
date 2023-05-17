@@ -53,8 +53,8 @@ public class SecurityConfig {
             // 로그인, 회원가입 API 는 토큰이 없는 상태에서 요청이 들어오기 때문에 permitAll 설정
             .and()
             .authorizeRequests()
-            .requestMatchers("/app/deal/{dealId}/detail", "/app/deal/list", "/auth/**").permitAll()
-            .requestMatchers("/app/member/**", "/app/deal/**", "/app/hobby/regist","/app/hobby/history/regist","/app/hobby/favorite/regist/{hobbyId}").authenticated()
+            .requestMatchers("/auth/**").permitAll()
+            .requestMatchers("/app/member/**").authenticated()
 
             // JwtFilter 를 addFilterBefore 로 등록했던 JwtSecurityConfig 클래스를 적용
             .and()

@@ -1,4 +1,4 @@
-package com.plana.planb.auth.dto;
+package com.plana.planb.auth.dto.jwt;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

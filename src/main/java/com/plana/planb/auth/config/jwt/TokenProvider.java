@@ -1,6 +1,6 @@
 package com.plana.planb.auth.config.jwt;
 
-import com.plana.planb.auth.dto.TokenDto;
+import com.plana.planb.auth.dto.jwt.TokenDto;
 import com.plana.planb.auth.exception.ex.CustomException;
 import com.plana.planb.auth.exception.ex.ErrorCode;
 import io.jsonwebtoken.Claims;
@@ -13,13 +13,11 @@ import io.jsonwebtoken.UnsupportedJwtException;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 import java.security.Key;
-import java.time.Duration;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Date;
 import java.util.stream.Collectors;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
